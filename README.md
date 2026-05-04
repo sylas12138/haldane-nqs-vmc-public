@@ -76,11 +76,23 @@ docs/
   benchmark_protocol.md         ED/VMC/replay audit protocol
   public_audit_snapshot.md      small public snapshot of the audit table
   technical_note.md             application-facing technical note
+  research_roadmap.md           near-term research plan and open questions
   application_project_summary.md Chinese application-ready project description
+data/
+  public_audit_snapshot.csv     small sanitized audit snapshot
+scripts/
+  summarize_public_snapshot.py  reproduce docs/generated_public_report.md
 src/haldane_nqs_public/
   observables.py                lightweight public observable helpers
 examples/
   observable_demo.py            minimal observable convention demo
+```
+
+Quick local checks:
+
+```bash
+PYTHONPATH=src python examples/observable_demo.py
+python scripts/summarize_public_snapshot.py
 ```
 
 ## 6. Claim Boundary
@@ -106,6 +118,8 @@ The most useful entry points are:
 
 - [technical note](docs/technical_note.md): a human-readable summary of the problem, the audit contract, and the current claim boundary;
 - [public audit snapshot](docs/public_audit_snapshot.md): a small, source-backed subset of the internal audit style, with sensitive paths and unpublished run trees removed;
+- [generated public report](docs/generated_public_report.md): output reproduced from `data/public_audit_snapshot.csv`;
+- [research roadmap](docs/research_roadmap.md): what I would do next if continuing this line;
 - [model and observables](docs/model_and_observables.md): definitions of `Q`, `CDW`, and `Q2`;
 - [benchmark protocol](docs/benchmark_protocol.md): how ED, training-best values, and strict replay are separated.
 

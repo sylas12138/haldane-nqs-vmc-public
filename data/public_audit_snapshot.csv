@@ -1,0 +1,6 @@
+row_id,cluster,filling,V,role,energy_status,order_status,topology_status,replay_status,public_verdict,source_level
+H-L3-V111,L=3,1/2,1.11,CI-side near-boundary check,close_to_ED,finite_size_baseline,one_body_diagnostic_consistent,replay_checked,benchmark_supporting_row,public_sanitized
+H-L3-V113,L=3,1/2,1.13,finite-size transition window,competing_branches,ambiguous_near_crossing,requires_hierarchy,replay_sensitive,diagnostic_row_not_final_claim,public_sanitized
+H-L3-V115,L=3,1/2,1.15,near-critical anchor,strict_pass,order_consistent_with_anchor,topology_diagnostic_tracked,strict_replay_pass,reviewer_grade_finite_size_anchor,public_sanitized
+H-L3-V117,L=3,1/2,1.17,CDW-side audit candidate,energy_order_tradeoff,order_enhanced,topology_needs_caution,replay_checked,method_diagnostic_row,public_sanitized
+H-L3-V119,L=3,1/2,1.19,CDW-side audit candidate,energy_order_tradeoff,order_enhanced,topology_needs_caution,replay_checked,method_diagnostic_row,public_sanitized
