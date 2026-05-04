@@ -1,0 +1,10 @@
+[project]
+name = "haldane-nqs-vmc-public"
+version = "0.1.0"
+description = "Public research portfolio for NQS/VMC benchmark work on the interacting Haldane model."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
