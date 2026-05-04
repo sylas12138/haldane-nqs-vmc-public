@@ -74,6 +74,8 @@ docs/
   model_and_observables.md      model, Hamiltonian, observable definitions
   nqs_vmc_methodology.md        ansatz and benchmark workflow
   benchmark_protocol.md         ED/VMC/replay audit protocol
+  public_audit_snapshot.md      small public snapshot of the audit table
+  technical_note.md             application-facing technical note
   application_project_summary.md Chinese application-ready project description
 src/haldane_nqs_public/
   observables.py                lightweight public observable helpers
@@ -98,3 +100,13 @@ Not claimed here:
 
 This is my most complete research project so far. It trained me to connect physics modeling, NQS ansatz design, exact benchmark construction, VMC computation, topology/order diagnostics, and reproducible scientific workflow.
 
+## 8. Notes for Prospective Advisors
+
+The most useful entry points are:
+
+- [technical note](docs/technical_note.md): a human-readable summary of the problem, the audit contract, and the current claim boundary;
+- [public audit snapshot](docs/public_audit_snapshot.md): a small, source-backed subset of the internal audit style, with sensitive paths and unpublished run trees removed;
+- [model and observables](docs/model_and_observables.md): definitions of `Q`, `CDW`, and `Q2`;
+- [benchmark protocol](docs/benchmark_protocol.md): how ED, training-best values, and strict replay are separated.
+
+The private workspace contains more experiments than this public repository. I keep the public version deliberately conservative: it is meant to show what I did and how I think, not to publish an unfinished phase diagram.
